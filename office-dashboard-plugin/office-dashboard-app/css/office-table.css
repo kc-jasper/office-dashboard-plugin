@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+}
+
+.item-table {
+  border: none;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}
+
+.item-table td {
+  border: none;
+  color: black;
+}
+
+.item-table td:first-child { 
+  border-top-left-radius: 10px; 
+  border-bottom-left-radius: 10px; 
+}
+
+.item-table td:last-child { 
+  border-top-right-radius: 10px; 
+  border-bottom-right-radius: 10px; 
+}
+
+
+/* specific parts of table cells */
+.item-table span {
+  display: block;
+  font-size: smaller;
+}
+
+.align-right-column {
+  text-align: right;
+}
+
+.user-icon {
+  background: white;
+  width: max-content;
+  height: max-content;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+#appt-list {
+  width: 23vw;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#task-list {
+  width: 22vw;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#all-patients-table tr {
+  background: #FCFCFC;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1), 0px 5px 8px rgba(0, 0, 0, 0.15), 0px 1px 14px rgba(0, 0, 0, 0.1);
+  line-height: 60px;
+  border-radius: 10px;
+}
+
+#all-patients-table th {
+  border: none;
+}

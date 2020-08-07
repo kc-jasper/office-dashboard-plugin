@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+}
+
+
+/* general provider portal nav style */
+.App {
+  position: absolute;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400px;
+  min-height: 100%;
+}
+
+.App-header {
+  position: absolute;
+  color: black;
+}
+
+
+/* logo style */
+.logo-container {
+  position: fixed;
+  float: left;
+  top: 3%;
+  left: 2%;
+}
+
+.logo {
+  width: 200px;
+}
+
+
+/* provider portal sidebar */
+#react-app-nav {
+  float: left;
+  margin-left: 2vh;
+}
+
+#react-app-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 4vh;
+  top: 5vh;
+}
+
+#react-app-nav ul li {
+  display: block;
+  margin: 5vh;
+  font-size: 14px;
+}
+
+#react-app-nav ul li a {
+  color: #989898;
+  outline: none;
+}
+
+#react-app-nav ul li a:hover {
+  color: black;
+}
+
+
+/* Notifications and My Account buttons */
+#top-buttons {
+  position: absolute;
+  left: 78vw;
+  z-index: 100;
+  top: 5vh;
+  width: max-content;
+}
+
+#top-buttons button {
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  background: #C4C4C4;
+}
+
+.new::before {
+  content: '';
+  height: 17px;
+  display: block;
+  width: 17px;
+  border-radius: 50%;
+  transform: translate(15px, -18px);
+  background: #FF4081;
+}
+
+#top-buttons a {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+#top-buttons button:hover {
+  background: #dfdede;
+}
+
+#top-buttons p {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  position: relative;
+  top: 2px;
+}

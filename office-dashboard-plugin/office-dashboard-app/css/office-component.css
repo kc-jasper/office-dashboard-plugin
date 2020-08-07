@@ -1,0 +1,466 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+}
+
+
+/* general component style */
+.component {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    top: 0;
+    width: 85%;
+    background: #F5F5F6;
+    padding-bottom: 100px;
+    margin-left: 18%;
+    min-height: 100%;
+    margin-bottom: -100px;
+}
+
+.component-header {
+    text-align: center;
+    color: black;
+}
+
+.component-header h1 {
+    position: relative;
+    top: 5vh;
+    left: 5vh;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+}
+
+.component-body {
+    position: relative;
+    padding: 50px;
+    min-height: 100%;
+    height: max-content;
+}
+
+.popup-content h1 {
+    position: relative;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 700;
+    color: #545451;
+}
+
+button {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+    background-color: #037971;
+}
+
+button:hover {
+    background-color: #a9ccca;
+}
+
+a {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.back-arrow {
+    z-index: 400;
+}
+
+.component-body button {
+    color: white;
+}
+
+.unfilled-button {
+    margin: 0 5px;
+    background: none;
+    border: solid 1px #037971;
+    width: 20px;
+    height: 20px;
+    outline: none;
+}
+
+.unfilled-button img {
+    min-width: 15;
+    min-height: 15;
+}
+
+.bold {
+    display: inline-block;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+}
+
+.bold-medium {
+    display: inline-block;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+}
+
+.bold-large {
+    display: inline-block;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+}
+
+.back-arrow {
+    width: 50px;
+    margin: 10px;
+    position: relative;
+    top: 7vh;
+    left: 5vh;
+}
+
+
+
+/* dashboard overview sections */
+.section h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    position: relative;
+    top: -35px;
+}
+
+.section {
+    background-color: white;
+    border-radius: 10px;
+    min-height: 100px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    min-width: 20%;
+}
+
+.section-body {
+    position: relative;
+    padding: 10px 20px;
+    margin: auto;
+    top: -35px;
+    text-align: center;
+}
+
+.view-more {
+    background: none;
+    border: 1px solid #838383;
+    color: black;
+    padding: 8px;
+    outline: none;
+    border-radius: 30px;
+    font-size: smaller;
+}
+
+.view-more.bottom-right {
+    margin-top: 10px;
+    color: black;
+    float: right;
+}
+
+.view-more:hover {
+    background: #F5F5F6;
+}
+
+/* Appointment Overview */
+#appointment-overview {
+    float: left;
+}
+
+.bar {
+    fill: #037971;
+}
+
+/* Today's Tasks */
+#tasks {
+    display: inline-block;
+}
+
+#task-list .task-check {
+    background: none;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.task-check:hover {
+    background: none;
+}
+
+/* Today's Appointments */
+#todays-appointments {
+    float: left;
+}
+
+/* Today's Payments */
+#payments {
+    display: inline-block;
+}
+
+
+/* menu to edit view of dashboard overview */
+#toggle-container {
+    width: 200px;
+    position: relative;
+    top: 9vh;
+    left: 63vw;
+    z-index: 100;
+}
+
+#toggle-container img {
+    float: right;
+    margin-right: 8px;
+    margin-top: 1px;
+}
+
+#toggle-view {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    min-height: 40px;
+    outline: none;
+    border: none;
+    width: 200px;
+}
+
+#edit-text {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    float: left;
+    position: relative;
+    margin-left: 10px;
+}
+
+#toggle-list {
+    width: 200px;
+    position: absolute;
+    top: 22vh;
+    left: 63vw;
+    z-index: 100;
+    text-align: left;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 20px;
+    border: none;
+}
+
+#toggle-list tr {
+    padding: 5px;
+}
+
+#toggle-list td {
+    border: none;
+    padding: 10 0px;
+}
+
+#toggle-list button {
+    background: none;
+    outline: none;
+    padding: 0;
+}
+
+
+/* component buttons that run along app-header level */
+.component-top-btn {
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    position: relative;
+    z-index: 100;
+    top: -2vh;
+    color: white;
+}
+
+#logout-btn {
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    right: -20%;
+}
+
+#add-appointment-btn {
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    right: 10%;
+    color: white;
+}
+
+.search-bar {
+    width: 20%; 
+    position: relative; 
+    top: -2vh; 
+    left: 1vw;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    border: 1px solid #838383;
+    outline: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.search-bar:focus {
+    cursor: text;
+    border: 1px solid #a9ccca;
+}
+
+.search-bar:hover {
+    cursor: text;
+    border: 1px solid #a9ccca;
+}
+
+
+/* payment page sections */
+#practice-profile {
+    padding: 20px 10px;
+    width: 80%;
+}
+
+#payment-list {
+    height: 100vh;
+    width: 50%;
+    float: left;
+}
+
+#total-revenue {
+    height: 30vh;
+    margin-left: 0;
+    width: 30%;
+    display: inline-block;
+}
+
+
+
+/* payment page #payment-overview subsections */
+.section-div {
+    display: inline-block;
+    width: 33%;
+    height: min-content;
+}
+
+.figure {
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+.figure-description {
+    text-align: left;
+    float: right;
+    width: 60%;
+    height: 100%;
+}
+
+.figure-description .bold-large {
+    line-height: normal;
+}
+
+
+/* individual component containers for special spacing */
+#calendar-container {
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 90%;
+}
+
+#notif-container {
+    margin-top: -20px;
+}
+
+
+/* footer */
+.App-footer {
+    background-color: #F5F5F6;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    margin-top: -315px;
+    height: 100px;
+    z-index: 200;
+}
+
+.App-footer-logo {
+    position: relative;
+    top: 2%;
+    left: 2%;
+}
+
+
+/* Notifs component */
+.notif-component {
+    padding: 20px;
+    min-height: 600px;
+}
+
+.notif-component table tr {
+    background: none;
+}
+
+#notif-nav {
+    margin-bottom: 4px;
+}
+
+#notif-nav ul li {
+    display: inline-block;
+}
+
+#notif-nav ul a {
+    background: #E5E5E5;
+    padding: 10px 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#notif-nav ul a:hover {
+    background: #a9ccca;
+    cursor: pointer;
+}
+
+#notif-nav ul a {
+    color: black;
+    outline: none;
+}
+
+#notif-body {
+    background: white;
+    border-radius: 0px 10px 10px 10px;
+}
+
+.new-notif-nav::before {
+    content: '';
+    height: 17px;
+    display: block;
+    width: 17px;
+    border-radius: 50%;
+    transform: translate(85px, 9px);
+    background: #FF4081;
+}
+
+#page-select {
+    margin: 0 auto;
+    padding-bottom: 30px;
+    width: max-content;
+}
+
+#page-select div {
+    display: inline-block;
+}
+
+#notif-btn {
+    width: 30px;
+}
+
+.new-notif::before {
+    content: '';
+    height: 17px;
+    display: block;
+    width: 17px;
+    transform: translate(0px, 0px);
+    border-radius: 50%;
+    background: #FF4081;
+}
